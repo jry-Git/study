@@ -11,7 +11,7 @@ public class Week01Flow {
         }
         while (i * i <= n) {
             if (n % i == 0) {
-                IsPrime = false;
+                IsPrime = false;break;
             }
             i++;
         }
@@ -74,7 +74,7 @@ public class Week01Flow {
             }
             System.out.println();
         }
-        //3.1到100偶数和
+        //3. 1到100 偶数和
         int num = 1;
         int sum = 0;
         while (num <= 100) {
@@ -103,7 +103,7 @@ public class Week01Flow {
                 break;
             } else if (guess < target) {
                 System.out.println("猜小了");
-            } else if (guess > target) {
+            } else  {
                 System.out.println("猜大了");
             }
         }
